@@ -91,13 +91,15 @@ Toronto_Crime_Cleaned.csv - Cleaned dataset used in the dashboard
 
 Toronto Crime Report Dashboard - Snapshot of Report Page 1 & 2
 
-README.md	Project documentation
+README.md - Project documentation
+
 ## 🌐 Interactivity
 All visuals are fully interactive with slicers and drill-through features.  
+
 You can filter by:
 - Year of occurrence vs. report year  
 - Specific neighbourhoods  
-- Crime category  
+- Crime category 
 
 —
 ## 📚 Tools & Skills
