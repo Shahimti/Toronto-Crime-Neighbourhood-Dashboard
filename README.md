@@ -13,17 +13,16 @@ A two-page Power BI dashboard analyzing real Toronto crime data from Kaggle. Thi
 ## 🧩 Dataset Information
 **Source:** [Kaggle – Major Crime Indicators] Link:  
 **File Type:** CSV  
-**Rows:** ~ (depends on your dataset size)  
+**Rows:** ~ 3,00,000+
 **Columns Used:**
-- Event_ID  
+- Total Crime Incidents
 - Report & Occurrence Dates (Year, Month, Day, Hour, Day of Week)  
-- Division  
 - Location Type  
-- Premises Type  
-- UCR Code  
+- Premises Type    
 - Offence  
 - Crime Category  
-- Neighbourhood  
+- Neighbourhood + (140)
+- UCR CODE
 
 **Data Cleaning Steps:**
 - Removed redundant or duplicate columns.  
@@ -82,6 +81,13 @@ For instance, selecting a specific hour and year dynamically updates all visuals
 
 ---
 
+💾 Files in Repository
+File	Description
+Toronto Crime Report.pbix	Power BI report (interactive)
+Toronto_Crime_Cleaned.csv	Cleaned dataset used in the dashboard
+Toronto Crime Report Dashboard Snapshot of Report Page 1 & 2
+
+README.md	Project documentation
 ## 🌐 Interactivity
 All visuals are fully interactive with slicers and drill-through features.  
 You can filter by:
