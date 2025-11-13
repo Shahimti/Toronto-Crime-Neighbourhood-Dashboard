@@ -66,7 +66,9 @@ This page provides a macro-level view of trends and overall performance indicato
 🏘️ Page 2 – Category Analysis
 
 Purpose: Deep dive into crime categories, timing, and locations.
+
 Slicers: Occurrence Year and Occurrence Hour for time-based interactivity.
+
 Visuals:
 - Tree Map: Total Crimes by Premises Type
 - Line Chart: Total Crimes by Occurrence Year
