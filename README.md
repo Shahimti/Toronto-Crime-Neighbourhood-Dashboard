@@ -48,8 +48,11 @@ The goal is to clean, transform & visualize crime data to uncover insights about
 🧭 Page 1 – KPI Dashboard
 
 Purpose: High-level overview of key metrics and citywide crime trends.
+
 Visuals:
+
 Slicers: Occurrence Year | Report Year | Neighbourhood | Crime Category
+
 Cards (KPIs):
 - Total Crime Incidents
 - Average Reporting Delay (Days)
