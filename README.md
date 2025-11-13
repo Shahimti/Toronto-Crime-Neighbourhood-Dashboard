@@ -44,27 +44,34 @@ The goal is to clean, transform & visualize crime data to uncover insights about
 
 ## 📈 Dashboard Pages
 
-### 🧭 **Page 1 – KPI Dashboard**
-**Purpose:** High-level overview of crime metrics and time-based trends.
+📈 Dashboard Pages
+🧭 Page 1 – KPI Dashboard
 
-**Visuals:**
- **Slicers** –  Occurrence Year, Report Year, Neighbourhood, Crime Category  
-**Cards (KPIs):**  
-  - Total Crime Incidents  
-  - Average Reporting Delay (Days)  
-  - Most Common Crime  
-  - Peak Hour  
-**Line Chart:** Total Crimes by Occurrence Year & Crime Category  
-**Map Visual:** Total Crimes by Neighbourhood & Crime Category  
+Purpose: High-level overview of key metrics and citywide crime trends.
+Visuals:
+Slicers: Occurrence Year | Report Year | Neighbourhood | Crime Category
+Cards (KPIs):
+- Total Crime Incidents
+- Average Reporting Delay (Days)
+- Most Common Crime
+- Peak Hour
+Clustered Bar Chart: Average Reporting Delay (Days) by Neighbourhood 
+Map Visual: Total Crimes by Neighbourhood & Crime Category
 
-### 🏘️ **Page 2 – Category Analysis**
-**Purpose:** Location- and offense-based insights.
+This page provides a macro-level view of trends and overall performance indicators — helping quickly identify high-crime areas, time periods, and delays in reporting.
 
-**Visuals:**
-- Tree Map – Total Crimes by Premises Type  
-- Donut Chart – % of Crimes by Location (Top 10)  
-- Clustered Bar Chart – Average Reporting Delay by Neighbourhood (Top 10)  
-- Stacked Bar Chart – No. of Crimes by Offence (Top 10)  
+🏘️ Page 2 – Category Analysis
+
+Purpose: Deep dive into crime categories, timing, and locations.
+Slicers: Occurrence Year and Occurrence Hour for time-based interactivity.
+Visuals:
+- Tree Map: Total Crimes by Premises Type
+- Line Chart: Total Crimes by Occurrence Year
+- Stacked Bar Chart: Total Crimes by Offence (Top 10)
+- Funnel Chart: Total Crimes by Crime Category (linked to slicers)
+
+This page allows the user to interactively explore when crimes occurred (hour, year), where they happened (premises type), and what category they belonged to.
+For instance, selecting a specific hour and year dynamically updates all visuals — giving a precise view of patterns and hotspots.
 
 ---
 
