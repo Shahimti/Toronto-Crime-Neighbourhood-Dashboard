@@ -76,3 +76,19 @@ You can filter by:
 - Crime category  
 
 —
+## 📚 Tools & Skills
+- Power BI (Main data visulization platform used for report creation)
+- Power Query (Data transformation & cleaning layer for reshaping and preparing the data)
+- DAX [Data Analysis Expression] (Used for calculated measures, dynamic visulas and conditional logics)
+- File Format (.pbix for developement .pdf for dashboard preview)
+
+---
+
+## 🧑‍💻 Author
+**Shah The Analyst**  
+Data Analyst | Power BI | Python | SQL  
+📍 Based on real Toronto data, cleaned, analyzed, and visualized by Shah.  
+📧 Shahimti12@gmail.com
+
+
+
