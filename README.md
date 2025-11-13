@@ -37,10 +37,8 @@ The goal is to clean, transform & visualize crime data to uncover insights about
 | **Total Crime Incidents** | =`COUNT(‘major-crime-indicators’)
 | **Reporting Delay (Days)** | = [(‘OCC_DATE’) - (‘REPORT_DATE’)]
 | **Average Reporting Delay (Days)** | = AVERAGE('major-crime-indicators'[Reporting Delays (Days)])
-| **Most Common Crime (MCI Category)** | = VAR TopMCI = TOPN(1,VALUES('major-crime-indicators'[Crime_Category]),CALCULATE(COUNTROWS('major-crime-indicators')),DESC)RETURN
-CONCATENATEX(TopMCI, 'major-crime-indicators'[Crime_Category], ",")
-| **Peak Hour of Crime** | = VAR TopHour = TOPN(1,VALUES('major-crime-indicators'[OCC_HOUR]), CALCULATE(COUNTROWS('major-crime-indicators')),DESC) RETURN
-CONCATENATEX(TopHour, 'major-crime-indicators'[OCC_HOUR], ",")
+| **Most Common Crime (MCI Category)** | = VAR TopMCI = TOPN(1,VALUES('major-crime-indicators'[Crime_Category]),CALCULATE(COUNTROWS('major-crime-indicators')),DESC)RETURN CONCATENATEX(TopMCI, 'major-crime-indicators'[Crime_Category], ",")
+| **Peak Hour of Crime** | = VAR TopHour = TOPN(1,VALUES('major-crime-indicators'[OCC_HOUR]), CALCULATE(COUNTROWS('major-crime-indicators')),DESC) RETURN CONCATENATEX(TopHour, 'major-crime-indicators'[OCC_HOUR], ",")
 
 ---
 
