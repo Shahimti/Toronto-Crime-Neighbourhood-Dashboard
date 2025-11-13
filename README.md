@@ -82,10 +82,12 @@ For instance, selecting a specific hour and year dynamically updates all visuals
 ---
 
 💾 Files in Repository
+
 File	Description
-Toronto Crime Report.pbix	Power BI report (interactive)
-Toronto_Crime_Cleaned.csv	Cleaned dataset used in the dashboard
-Toronto Crime Report Dashboard Snapshot of Report Page 1 & 2
+
+Toronto Crime Report.pbix	 Power BI report (interactive)
+Toronto_Crime_Cleaned.csv	 Cleaned dataset used in the dashboard
+Toronto Crime Report Dashboard  Snapshot of Report Page 1 & 2
 
 README.md	Project documentation
 ## 🌐 Interactivity
