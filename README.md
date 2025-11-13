@@ -1,1 +1,80 @@
 # Toronto-Crime-Neighbourhood-Dashboard
+## 📊 Project Overview
+This project analyzes crime incidents in Toronto using open data sourced from Kaggle.  
+The goal is to clean, transform & visualize crime data to uncover insights about:
+- Crime distribution across neighbourhoods,
+- Common crime categories
+- Reporting delays (days)
+- Temporal patterns of incidents.
+
+
+## 🧩 Dataset Information
+**Source:** [Kaggle – Major Crime Indicators] Link:  
+**File Type:** CSV  
+**Rows:** ~ (depends on your dataset size)  
+**Columns Used:**
+- Event_ID  
+- Report & Occurrence Dates (Year, Month, Day, Hour, Day of Week)  
+- Division  
+- Location Type  
+- Premises Type  
+- UCR Code  
+- Offence  
+- Crime Category  
+- Neighbourhood  
+
+**Data Cleaning Steps:**
+- Removed redundant or duplicate columns.  
+- Standardized neighborhood names and extracted relevant parts (e.g., “Apartment” from “Apartment (rooming, condo)”).  
+- Created new columns (customized) for reporting delay (days) & average reporting delay (days)
+- Converted all date columns to proper `datetime` format for time-based visuals.  
+
+---
+
+## 🧮 Key DAX Measures
+| Measure | Description |
+|----------|--------------|
+| **Total Crime Incidents** | =`COUNT(‘major-crime-indicators’)
+| **Reporting Delay (Days)** | = [(‘OCC_DATE’) - (‘REPORT_DATE’)]
+| **Average Reporting Delay (Days)** | = AVERAGE('major-crime-indicators'[Reporting Delays (Days)])
+| **Most Common Crime (MCI Category)** | = VAR TopMCI = TOPN(1,VALUES('major-crime-indicators'[Crime_Category]),CALCULATE(COUNTROWS('major-crime-indicators')),DESC)RETURN
+CONCATENATEX(TopMCI, 'major-crime-indicators'[Crime_Category], ",")
+| **Peak Hour of Crime** | = VAR TopHour = TOPN(1,VALUES('major-crime-indicators'[OCC_HOUR]), CALCULATE(COUNTROWS('major-crime-indicators')),DESC) RETURN
+CONCATENATEX(TopHour, 'major-crime-indicators'[OCC_HOUR], ",")
+
+---
+
+## 📈 Dashboard Pages
+
+### 🧭 **Page 1 – KPI Dashboard**
+**Purpose:** High-level overview of crime metrics and time-based trends.
+
+**Visuals:**
+ **Slicers** –  Occurrence Year, Report Year, Neighbourhood, Crime Category  
+**Cards (KPIs):**  
+  - Total Crime Incidents  
+  - Average Reporting Delay (Days)  
+  - Most Common Crime  
+  - Peak Hour  
+**Line Chart:** Total Crimes by Occurrence Year & Crime Category  
+**Map Visual:** Total Crimes by Neighbourhood & Crime Category  
+
+### 🏘️ **Page 2 – Category Analysis**
+**Purpose:** Location- and offense-based insights.
+
+**Visuals:**
+- Tree Map – Total Crimes by Premises Type  
+- Donut Chart – % of Crimes by Location (Top 10)  
+- Clustered Bar Chart – Average Reporting Delay by Neighbourhood (Top 10)  
+- Stacked Bar Chart – No. of Crimes by Offence (Top 10)  
+
+---
+
+## 🌐 Interactivity
+All visuals are fully interactive with slicers and drill-through features.  
+You can filter by:
+- Year of occurrence vs. report year  
+- Specific neighbourhoods  
+- Crime category  
+
+—
