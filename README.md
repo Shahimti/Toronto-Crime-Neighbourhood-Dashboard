@@ -7,6 +7,8 @@ The goal is to clean, transform & visualize crime data to uncover insights about
 - Reporting delays (days)
 - Temporal patterns of incidents.
 
+## Project Description
+A two-page Power BI dashboard analyzing real Toronto crime data from Kaggle. This project demonstrates data cleaning, DAX measure creation, and advanced visualization techniques to highlight crime patterns, reporting delays, and location-based insights across the city.
 
 ## 🧩 Dataset Information
 **Source:** [Kaggle – Major Crime Indicators] Link:  
