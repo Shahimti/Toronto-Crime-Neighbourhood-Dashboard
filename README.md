@@ -11,7 +11,7 @@ The goal is to clean, transform & visualize crime data to uncover insights about
 A two-page Power BI dashboard analyzing real Toronto crime data from Kaggle. This project demonstrates data cleaning, DAX measure creation, and advanced visualization techniques to highlight crime patterns, reporting delays, and location-based insights across the city.
 
 ## 🧩 Dataset Information
-**Source:** [Kaggle – Major Crime Indicators] Link:  
+**Source:** [Kaggle – Major Crime Indicators] Link: **https://drive.google.com/file/d/1UfTN9bpKS6I7lg_QznhqEvXSrANwjYzm/view?usp=sharing** 
 **File Type:** CSV  
 **Rows:** ~ 3,00,000+
 **Columns Used:**
@@ -59,7 +59,9 @@ Cards (KPIs):
 - Average Reporting Delay (Days)
 - Most Common Crime
 - Peak Hour
-Clustered Bar Chart: Average Reporting Delay (Days) by Neighbourhood 
+  
+Clustered Bar Chart: Average Reporting Delay (Days) by Neighbourhood
+
 Map Visual: Total Crimes by Neighbourhood & Crime Category
 
 This page provides a macro-level view of trends and overall performance indicators — helping quickly identify high-crime areas, time periods, and delays in reporting.
@@ -77,7 +79,7 @@ Visuals:
 - Funnel Chart: Total Crimes by Crime Category (linked to slicers)
 
 This page allows the user to interactively explore when crimes occurred (hour, year), where they happened (premises type), and what category they belonged to.
-For instance, selecting a specific hour and year dynamically updates all visuals — giving a precise view of patterns and hotspots.
+For instance, selecting a specific hour and year dynamically updates all visuals - giving a precise view of patterns and hotspots.
 
 ---
 
