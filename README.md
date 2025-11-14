@@ -14,6 +14,7 @@ A two-page Power BI dashboard analyzing real Toronto crime data from Kaggle. Thi
 **Source:** [Kaggle – Major Crime Indicators] Link: **https://drive.google.com/file/d/1UfTN9bpKS6I7lg_QznhqEvXSrANwjYzm/view?usp=sharing** 
 **File Type:** CSV  
 **Rows:** ~ 3,00,000+
+
 **Columns Used:**
 - Total Crime Incidents
 - Report & Occurrence Dates (Year, Month, Day, Hour, Day of Week)  
